@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 
 async function getData() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/postsgere',
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts',
         {next: {
             revalidate: 60
         }

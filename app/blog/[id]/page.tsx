@@ -8,7 +8,7 @@ type Props = {
 
 
 async function getData(id: string) {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/tags/${id}jf`,
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`,
         {next: {
                 revalidate: 60,
                }
